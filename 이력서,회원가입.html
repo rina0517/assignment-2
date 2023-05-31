@@ -1,0 +1,271 @@
+<html>
+<title>과제2</title>
+<meta charset="UTF-8">
+<head>
+    <style>
+        footer {
+			text-align: center;
+			margin-top: 30px;
+        }
+        body{
+            background-color:rgb(206, 226, 234);
+            background-image: url(https://s3.ap-northeast-2.amazonaws.com/findcom.com/images/board/1623627709_17H.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 250px;
+        }
+        
+        #resumcontainer{
+            display:flex;
+            justify-content:space-between;
+            align-items:flex-start;
+        }
+        #resumecontainer>div{
+            flex:1;
+            margin-right:20px;
+        }
+        input:hover {
+          cursor: crosshair;
+        }
+        input[type="text"]:hover{
+          background-color:red;
+        }
+        input[type="file"]:hover{
+          background-color:orange;
+        }
+        input[type="radio"]:hover{
+          background-color:yellow;
+        }
+        input[type="number"]:hover{
+          background-color:greenyellow
+        }
+        input[type="date"]:hover{
+          background-color:skyblue
+        }
+        #reason:focus{
+          background-color:violet;
+        }
+        ul a:hover {
+            color:red;
+            cursor: crosshair;
+        }
+        #signupcontainer{
+            flex:1;
+        }
+    </style>
+</head>
+<body>
+    <div id="resumcontainer">
+        <div>
+           <h1>이력서</h1>
+            <ul>
+                 <a href="#A">개인 신상</a>&nbsp;
+                 <a href="#B">학력 사항</a>&nbsp;
+                 <a href="#C">자격 면허</a>&nbsp;
+                 <a href="#D">경력(수상)</a>
+                  <br>
+       
+            </ul>
+  
+    
+            <img src="사진.jpg" width="150" height="200">
+            <br>
+            <br>
+   
+            <h2 id="A" style="font-family:'Georgia',serif;">개인 신상</h2>
+            <table id="personalTable" border="1" style="background-color: rgb(182, 230, 247);">
+               <tr>
+                   <th rowspan="3">성명</th>
+                   <td colspan="4">(한글) 이예린</td>
+               </tr>
+               <tr>
+                  <td colspan="4">(한자)오얏 리, 법 례, 옥빛 린</td>
+               </tr>
+               <tr>
+                  <td colspan="'4">(영문) LEE YE RIN</td>  
+               </tr>
+      
+            </table>
+            <table id="birth" border="1" style="background-color: rgb(140, 194, 236);">
+                <tr>
+                    <th rowspan="3">생년월일</th>
+                </tr>
+                <tr>
+                  <td>2004년 05월 17일</td>
+                </tr>
+            </table>
+    
+            <table id="adress" border="1" style="background-color: rgb(97, 168, 206);">
+                <tr>
+                  <th rowspan="3">주소</th>
+                  </tr>
+                <tr>
+                  <td>서울특별시 동작구 사당동</td>
+                </tr>
+            </table>
+
+            <h2 id="B" style="font-family:'Arial',sans-serif;">학력사항</h2>
+	        <table id="education" border="1" style="background-color: rgb(82, 163, 229);">
+		      <tr>
+		         <th rowspan="4">학력사항</th>
+		         <th>기간</th>
+		         <th>출신학교</th>
+	             <th>전공</th>
+		         <th>학점</th>
+                 <th>졸업여부</th>
+		      </tr>
+              <tr>
+                 <td>2023.03 ~ 현재</td>
+                 <td>한양여자대학교</td>
+                 <td>빅데이터학과</td>
+                 <td>X</td>
+                 <td>재학</td>
+             </tr>
+             <tr>
+                  <td>2020.03 ~ 2023.02</td>
+                 <td>하버드대학교</td>
+                 <td>컴퓨터공학과</td>
+                 <td>4.50/4.50</td>
+                 <td>졸업</td>
+             </tr>
+             <tr>
+                 <td>2016.03 ~ 2019.02</td>
+                 <td>동작고등학교</td>
+                 <td>문과</td>
+                 <td>X</td>
+                 <td>졸업</td>
+             </tr>
+         </table>
+         <h2 id="C" style="font-family:'Comic Sans MS',cursive;">자격 면허</h2>
+         <table id="license" border="1" style="background-color: rgb(17, 129, 208);">
+             <tr>
+                 <th rowspan="4">자격면허</th>
+                 <th>자격증(면허)명</th>
+                 <th>등급</th>
+                 <th>취득년월일</th>
+                 <th>발행기관</th>
+             </tr>
+             <tr>
+                  <td>TOEIC</td>
+                  <td>990점</td>
+                  <td>2022.02.08(토)</td>
+                  <td>한국 TOEIC 위원회</td>
+             </tr>
+             <tr>
+                  <td>정보 처리 기사</td>
+                  <td>2등급</td>
+                  <td>2023.01.10</td>
+                  <td>한국산업인력공단</td>
+             </tr>
+          </table>
+          <h2 id="D" style="font-family:'Papyrus',cursive;">경력(수상)</h2>
+	      <table id="experience"  border="1" style="background-color: rgb(23, 84, 134);">
+	     	<tr>
+		     <th rowspan="4">경력(수상)</th>
+		     <th>수상명</th>
+		     <th>수상일</th>
+	         <th>수여기관</th>
+	      </tr>
+          <tr>
+              <td>노벨평화상</td>
+              <td>1910년</td>
+              <td>스웨덴 왕립과학원</td>
+          </tr>
+          <tr>
+              <td>국제수학올림피아드</td>
+              <td>2003년</td>
+              <td>일본 정부</td>
+          </tr>
+          <tr>
+              <td>KMC</td>
+              <td>2012년</td>
+              <td>교육청</td>
+          </tr>
+          </table>
+          <br>
+	      <div>
+		     <h2>오디오</h2>
+		       <audio controls>
+			      <source src="오디오.m4a" type="audio/mpeg">
+		       </audio>	
+	      </div>
+	      <br>
+          <br>
+	      <div>
+		     <h2>동영상</h2>
+             <video width="560" height="315" controls>
+                 <source src="동영상.mp4" type="video/mp4">   
+             </video>
+         </div> 
+      </div>
+    
+	  <br>
+     
+      <div id="resumecontainer">
+         <h1>회원가입 페이지</h1>
+         <form>
+             <div>
+                 <label for="name">이름</label>
+                 <input type="text" name="name"이름>
+      
+    
+                 <br>
+             </div>
+             <br>
+             <div>
+                 <label for="photo">사진</label>
+                 <input type="file" name="사진" require>
+             </div>
+             <br>
+             <div>
+                 <label for="gender">성별</label>
+                 <input type="radio"/>
+                 <label for="male">남자</label>
+                 <input type="radio"checked>
+                 <label for="female">여자</label>
+             </div>
+             <br>
+             <div>
+                  <label for="생년월일">생년월일(양력)</label>
+                  <input type="date" name="생년월일">
+             </div>
+             <div>
+                 <label for="생년월일">생년월일(음력)</label>
+                 <input type="date" name="생년월일">
+             </div>
+             <br>
+             <div>
+                  <label for="age">나이</label>
+                 <input type="number"  name="나이">
+             </div>
+              <br>
+              <div>
+                  <label for="address">주소</label>
+                 <input type="text" name="주소" >
+              </div>
+              <br>
+             <div>
+                  <label>가입 이유</label>
+                  <select id="reason">
+                     <option>선택해주세요.</option>
+                     <option>관심 분야가 있어서</option>
+                     <option>필요해서</option>
+                     <option>추천받아서</option>
+                     <option>그냥 궁금해서</option>
+                 </select>
+             </div>
+              <br>
+             <div>
+                 <label for="captcha">로봇방지:</label>
+                 <input type="text" placeholder="보안문자 입력">
+             </div>
+              <br>
+              <button type="submit">회원가입</button>
+         </form>
+      
+         <div>
+	         	<footer><h3>-2302577 이예린-</h3></footer>
+	     </div>
+     </div>
+  </div>
+</body>
+</html>
